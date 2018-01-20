@@ -18,7 +18,7 @@ $sender=$input['entry'][0]['messaging'][0]['sender']['id'];
 $message=isset($input['entry'][0]['messaging'][0]['message']['text'])? $input['entry'][0]['messaging'][0]['message']['text']:'';
 if($message){
     $message_to_reply="this is sastosaman";
-    $url="https://graph.facebook.com/v2.8/messages?access_token".$access_token;
+    $url="https://graph.facebook.com/v2.8/me/messages?access_token=".$access_token;
     $jasonData='[
     "recipient":(
 "id":"'.$sender.'"
